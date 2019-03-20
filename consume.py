@@ -14,4 +14,11 @@ def loop():
             print(message.delete())
 
 threading.Thread(target=loop).start()
+threading.Thread(target=loop).start()
+threading.Thread(target=loop).start()
+threading.Thread(target=loop).start()
+threading.Thread(target=loop).start()
+threading.Thread(target=loop).start()
+threading.Thread(target=loop).start()
+threading.Thread(target=loop).start()
 
