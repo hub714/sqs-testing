@@ -8,5 +8,6 @@ def loop():
     for message in queue.receive_messages(MaxNumberOfMessages=10):
     #  print(message)
         print(message.body)
+        time.sleep(0.2)
 
 threading.Thread(target=loop).start()
