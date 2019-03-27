@@ -10,6 +10,12 @@ message = 'fasdfaskdjfhaskldhfaksjdhfkajdshfklajdhfkjahsdklfjhasdlkfjhaksdjhffas
 def loop():
     for x in range(10000):
         response = queue.send_message(MessageBody=message)
+        if x == 5000:
+            print(x)
+        elif x == 7000:
+            print(x)
+        elif x == 3000:
+            print(x)
 
 threading.Thread(target=loop).start()
 threading.Thread(target=loop).start()
